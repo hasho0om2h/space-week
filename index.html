@@ -12,18 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- النجوم -->
     <div class="stars"></div>
 
-    <!-- شريط التنقل -->
+    <!-- ==================== NAVBAR ==================== -->
+
     <header>
 
         <nav class="navbar">
@@ -33,10 +31,23 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">عن الأسبوع</a></li>
-                <li><a href="#importance">الأهمية</a></li>
-                <li><a href="#explore">استكشف</a></li>
+
+                <li>
+                    <a href="#home">الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="#about">عن الأسبوع</a>
+                </li>
+
+                <li>
+                    <a href="#importance">الأهمية</a>
+                </li>
+
+                <li>
+                    <a href="#explore">استكشف</a>
+                </li>
+
             </ul>
 
             <button class="menu-btn" onclick="toggleMenu()">
@@ -48,8 +59,30 @@
     </header>
 
 
-    <!-- الصفحة الرئيسية -->
+    <!-- ==================== HERO ==================== -->
+
     <section id="home" class="hero">
+
+
+        <!--
+        ==================================================
+        الشعارات
+        ضع رابط الشعار الأول مكان:
+        LOGO_1_URL
+
+        وضع رابط الشعار الثاني مكان:
+        LOGO_2_URL
+        ==================================================
+        -->
+
+        <div class="project-logos">
+
+            <img src="LOGO_1_URL" alt="الشعار الأول">
+
+            <img src="LOGO_2_URL" alt="الشعار الثاني">
+
+        </div>
+
 
         <div class="hero-content">
 
@@ -58,14 +91,22 @@
             </span>
 
             <h1>
+
                 أسبوع الفضاء
-                <span>العالمي</span>
+
+                <span>
+                    العالمي
+                </span>
+
             </h1>
 
             <p>
+
                 رحلة مذهلة نحو النجوم، نستكشف فيها أسرار الكون
                 ونتعرف على أهمية علوم الفضاء ومستقبل البشرية.
+
             </p>
+
 
             <div class="hero-buttons">
 
@@ -82,7 +123,8 @@
         </div>
 
 
-        <!-- الأرض -->
+        <!-- الكوكب -->
+
         <div class="planet">
 
             <div class="earth">
@@ -98,12 +140,15 @@
     </section>
 
 
-    <!-- عن أسبوع الفضاء -->
+    <!-- ==================== ABOUT ==================== -->
+
     <section id="about" class="section">
 
         <div class="section-title">
 
-            <span>01</span>
+            <span>
+                01
+            </span>
 
             <h2>
                 ما هو أسبوع الفضاء العالمي؟
@@ -114,22 +159,31 @@
 
         <div class="about-grid">
 
+
             <div class="about-text">
 
                 <p>
+
                     أسبوع الفضاء العالمي هو احتفال عالمي يقام كل عام
                     للتعريف بأهمية علوم وتكنولوجيا الفضاء ودورها في
                     تطوير حياة الإنسان.
+
                 </p>
 
+
                 <p>
+
                     ويجمع هذا الحدث الطلاب والمعلمين والعلماء والمؤسسات
                     من مختلف أنحاء العالم للمشاركة في أنشطة تعليمية
                     وفعاليات مرتبطة بالفضاء.
+
                 </p>
 
+
                 <div class="quote">
+
                     "الفضاء ليس مجرد مكان بعيد، بل هو مستقبل البشرية."
+
                 </div>
 
             </div>
@@ -146,7 +200,9 @@
                 </h3>
 
                 <p>
+
                     يشارك فيه أشخاص ومؤسسات من مختلف دول العالم.
+
                 </p>
 
             </div>
@@ -156,12 +212,16 @@
     </section>
 
 
-    <!-- أهمية الفضاء -->
+    <!-- ==================== IMPORTANCE ==================== -->
+
     <section id="importance" class="section dark-section">
+
 
         <div class="section-title center">
 
-            <span>02</span>
+            <span>
+                02
+            </span>
 
             <h2>
                 لماذا الفضاء مهم؟
@@ -171,6 +231,7 @@
 
 
         <div class="cards">
+
 
             <div class="card">
 
@@ -183,7 +244,10 @@
                 </h3>
 
                 <p>
-                    يساعدنا استكشاف الفضاء على فهم الكون وتطوير العلوم.
+
+                    يساعدنا استكشاف الفضاء على فهم الكون
+                    وتطوير العلوم.
+
                 </p>
 
             </div>
@@ -200,8 +264,10 @@
                 </h3>
 
                 <p>
-                    تقنيات الفضاء تساهم في تطوير الاتصالات والملاحة
-                    ومراقبة الأرض.
+
+                    تقنيات الفضاء تساهم في تطوير الاتصالات
+                    والملاحة ومراقبة الأرض.
+
                 </p>
 
             </div>
@@ -218,8 +284,10 @@
                 </h3>
 
                 <p>
-                    تساعد الأقمار الصناعية العلماء على مراقبة المناخ
-                    والبيئة والكوارث الطبيعية.
+
+                    تساعد الأقمار الصناعية العلماء على مراقبة
+                    المناخ والبيئة والكوارث الطبيعية.
+
                 </p>
 
             </div>
@@ -236,7 +304,10 @@
                 </h3>
 
                 <p>
-                    استكشاف الفضاء يفتح فرصًا جديدة للأجيال القادمة.
+
+                    استكشاف الفضاء يفتح فرصًا جديدة
+                    للأجيال القادمة.
+
                 </p>
 
             </div>
@@ -246,12 +317,16 @@
     </section>
 
 
-    <!-- استكشاف الفضاء -->
+    <!-- ==================== EXPLORE ==================== -->
+
     <section id="explore" class="section">
+
 
         <div class="section-title center">
 
-            <span>03</span>
+            <span>
+                03
+            </span>
 
             <h2>
                 رحلة إلى الفضاء
@@ -261,6 +336,7 @@
 
 
         <div class="space-grid">
+
 
             <div class="space-card">
 
@@ -273,7 +349,10 @@
                 </h3>
 
                 <p>
-                    أقرب جار طبيعي للأرض وأحد أهم أهداف الاستكشاف الفضائي.
+
+                    أقرب جار طبيعي للأرض وأحد أهم أهداف
+                    الاستكشاف الفضائي.
+
                 </p>
 
             </div>
@@ -290,8 +369,10 @@
                 </h3>
 
                 <p>
-                    كوكب مثير للاهتمام بسبب احتمالية وجود آثار للحياة
-                    في الماضي.
+
+                    كوكب مثير للاهتمام بسبب احتمالية وجود
+                    آثار للحياة في الماضي.
+
                 </p>
 
             </div>
@@ -308,8 +389,10 @@
                 </h3>
 
                 <p>
-                    يحتوي نظامنا الشمسي على مجموعة متنوعة من الكواكب
-                    والأجرام السماوية.
+
+                    يحتوي نظامنا الشمسي على مجموعة متنوعة
+                    من الكواكب والأجرام السماوية.
+
                 </p>
 
             </div>
@@ -319,7 +402,8 @@
     </section>
 
 
-    <!-- رسالة -->
+    <!-- ==================== MISSION ==================== -->
+
     <section class="mission">
 
         <div>
@@ -328,14 +412,22 @@
                 🚀 DREAM • DISCOVER • EXPLORE
             </span>
 
+
             <h2>
+
                 انظر إلى السماء...
+
                 <br>
+
                 فربما يكون مستقبلك هناك.
+
             </h2>
 
+
             <button onclick="showMessage()">
+
                 اضغط هنا ✨
+
             </button>
 
         </div>
@@ -343,47 +435,107 @@
     </section>
 
 
-    <!-- معلومات الطلاب والمدرسة -->
+    <!-- ==================== PROJECT INFORMATION ==================== -->
+
     <section class="student-info">
+
 
         <div class="student-card">
 
+
             <span>
-                🎓 مشروع أسبوع الفضاء العالمي
+                🚀 WORLD SPACE WEEK PROJECT
             </span>
 
+
             <h2>
-                معلومات المشروع
+                Project Team
             </h2>
 
-            <p>
-                <strong>اسم الطالب:</strong>
-                هشام محمد هارون - محمد عمر
-            </p>
 
             <p>
-                <strong>اسم المدرسة:</strong>
-                ثانوية الأمير عبدالمحسن بن عبدالعزيز
+
+                <strong>
+                    Student Design:
+                </strong>
+
+                <br>
+
+                Hisham Mohammed Haroon
+
+                <br>
+
+                Prince Abdulmohsen bin Abdulaziz Secondary School
+
             </p>
+
+
+            <p>
+
+                <strong>
+                    Program Coordinator:
+                </strong>
+
+                <br>
+
+                Dr. Wail Zain Fakherji
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Teacher Supervisor:
+                </strong>
+
+                <br>
+
+                ALNAKHLY, HASSAN AHMAD M
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    School Principal:
+                </strong>
+
+                <br>
+
+                Bandar Saad Al-Jabri
+
+            </p>
+
 
         </div>
 
     </section>
 
 
-    <!-- أسفل الصفحة -->
+    <!-- ==================== FOOTER ==================== -->
+
     <footer>
 
         <div class="footer-logo">
+
             🚀 عالم الفضاء
+
         </div>
 
+
         <p>
+
             موقع تعليمي عن أسبوع الفضاء العالمي
+
         </p>
 
+
         <p class="copyright">
+
             © 2026 جميع الحقوق محفوظة
+
         </p>
 
     </footer>
