@@ -4,22 +4,29 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: "Cairo", Arial, sans-serif;
+
     background: #030712;
+
     color: #ffffff;
+
     overflow-x: hidden;
 }
 
 
-/* النجوم */
+/* ==================== STARS ==================== */
 
 .stars {
+
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -33,18 +40,33 @@ body {
     opacity: 0.5;
 
     background-image:
-        radial-gradient(circle, #ffffff 1px, transparent 1px),
-        radial-gradient(circle, #ffffff 1px, transparent 1px);
 
-    background-size: 70px 70px, 120px 120px;
+        radial-gradient(
+            circle,
+            #ffffff 1px,
+            transparent 1px
+        ),
 
-    background-position: 0 0, 40px 50px;
+        radial-gradient(
+            circle,
+            #ffffff 1px,
+            transparent 1px
+        );
+
+    background-size:
+        70px 70px,
+        120px 120px;
+
+    background-position:
+        0 0,
+        40px 50px;
 }
 
 
-/* شريط التنقل */
+/* ==================== HEADER ==================== */
 
 header {
+
     position: fixed;
 
     top: 0;
@@ -54,14 +76,18 @@ header {
 
     z-index: 1000;
 
-    background: rgba(3, 7, 18, 0.8);
+    background:
+        rgba(3, 7, 18, 0.8);
 
     backdrop-filter: blur(15px);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
 }
 
+
 .navbar {
+
     max-width: 1200px;
 
     margin: auto;
@@ -75,13 +101,17 @@ header {
     justify-content: space-between;
 }
 
+
 .logo {
+
     font-size: 21px;
 
     font-weight: 900;
 }
 
+
 .nav-links {
+
     display: flex;
 
     gap: 30px;
@@ -89,7 +119,9 @@ header {
     list-style: none;
 }
 
+
 .nav-links a {
+
     color: #ffffff;
 
     text-decoration: none;
@@ -97,11 +129,15 @@ header {
     transition: 0.3s;
 }
 
+
 .nav-links a:hover {
+
     color: #60a5fa;
 }
 
+
 .menu-btn {
+
     display: none;
 
     background: none;
@@ -116,16 +152,18 @@ header {
 }
 
 
-/* الصفحة الرئيسية */
+/* ==================== HERO ==================== */
 
 .hero {
+
     min-height: 100vh;
 
     max-width: 1200px;
 
     margin: auto;
 
-    padding: 150px 25px 80px;
+    padding:
+        150px 25px 80px;
 
     display: flex;
 
@@ -134,51 +172,119 @@ header {
     justify-content: space-between;
 
     gap: 50px;
+
+    position: relative;
 }
 
+
+/* ==================== LOGOS ==================== */
+
+.project-logos {
+
+    position: absolute;
+
+    top: 95px;
+
+    right: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    z-index: 10;
+}
+
+
+.project-logos img {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    padding: 8px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    transition: 0.3s;
+}
+
+
+.project-logos img:hover {
+
+    transform: scale(1.08);
+
+    border-color: #60a5fa;
+}
+
+
+/* ==================== HERO CONTENT ==================== */
+
 .hero-content {
+
     max-width: 650px;
 }
 
+
 .badge {
+
     display: inline-block;
 
     padding: 8px 16px;
 
     margin-bottom: 20px;
 
-    border: 1px solid rgba(96, 165, 250, 0.4);
+    border:
+        1px solid rgba(96, 165, 250, 0.4);
 
     border-radius: 30px;
 
     color: #93c5fd;
 
-    background: rgba(59, 130, 246, 0.08);
+    background:
+        rgba(59, 130, 246, 0.08);
 }
 
+
 .hero h1 {
-    font-size: clamp(50px, 8vw, 90px);
+
+    font-size:
+        clamp(50px, 8vw, 90px);
 
     line-height: 1.05;
 
     font-weight: 900;
 }
 
+
 .hero h1 span {
+
     display: block;
 
-    background: linear-gradient(
-        90deg,
-        #60a5fa,
-        #a78bfa
-    );
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa
+        );
 
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
 }
 
+
 .hero p {
+
     margin-top: 25px;
 
     font-size: 18px;
@@ -188,7 +294,11 @@ header {
     line-height: 2;
 }
 
+
+/* ==================== BUTTONS ==================== */
+
 .hero-buttons {
+
     margin-top: 35px;
 
     display: flex;
@@ -196,9 +306,12 @@ header {
     gap: 15px;
 }
 
+
 .primary-btn,
 .secondary-btn {
-    padding: 14px 25px;
+
+    padding:
+        14px 25px;
 
     border-radius: 12px;
 
@@ -207,32 +320,43 @@ header {
     transition: 0.3s;
 }
 
+
 .primary-btn {
+
     background: #2563eb;
 
     color: white;
 }
 
+
 .primary-btn:hover {
-    transform: translateY(-4px);
+
+    transform:
+        translateY(-4px);
 
     background: #3b82f6;
 }
 
+
 .secondary-btn {
-    border: 1px solid #334155;
+
+    border:
+        1px solid #334155;
 
     color: white;
 }
 
+
 .secondary-btn:hover {
+
     background: #111827;
 }
 
 
-/* الأرض */
+/* ==================== PLANET ==================== */
 
 .planet {
+
     width: 360px;
 
     height: 360px;
@@ -244,113 +368,158 @@ header {
     place-items: center;
 }
 
+
 .earth {
+
     font-size: 170px;
 
-    animation: float 4s ease-in-out infinite;
+    animation:
+        float 4s ease-in-out infinite;
 
-    filter: drop-shadow(
-        0 0 35px rgba(59, 130, 246, 0.6)
-    );
+    filter:
+        drop-shadow(
+            0 0 35px
+            rgba(59, 130, 246, 0.6)
+        );
 }
 
+
 .orbit {
+
     position: absolute;
 
-    border: 1px solid rgba(96, 165, 250, 0.3);
+    border:
+        1px solid
+        rgba(96, 165, 250, 0.3);
 
     border-radius: 50%;
 }
 
+
 .orbit-1 {
+
     width: 320px;
 
     height: 150px;
 
-    transform: rotate(25deg);
+    transform:
+        rotate(25deg);
 }
 
+
 .orbit-2 {
+
     width: 280px;
 
     height: 110px;
 
-    transform: rotate(-30deg);
+    transform:
+        rotate(-30deg);
 }
+
 
 @keyframes float {
 
     0%,
     100% {
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
     50% {
-        transform: translateY(-20px);
+
+        transform:
+            translateY(-20px);
+
     }
 }
 
 
-/* الأقسام */
+/* ==================== SECTIONS ==================== */
 
 .section {
+
     max-width: 1200px;
 
     margin: auto;
 
-    padding: 110px 25px;
+    padding:
+        110px 25px;
 }
+
 
 .dark-section {
+
     max-width: none;
 
-    padding-left: max(
-        25px,
-        calc((100% - 1150px) / 2)
-    );
+    padding-left:
+        max(
+            25px,
+            calc(
+                (100% - 1150px) / 2
+            )
+        );
 
-    padding-right: max(
-        25px,
-        calc((100% - 1150px) / 2)
-    );
+    padding-right:
+        max(
+            25px,
+            calc(
+                (100% - 1150px) / 2
+            )
+        );
 
-    background: rgba(15, 23, 42, 0.65);
+    background:
+        rgba(15, 23, 42, 0.65);
 }
 
+
 .section-title {
+
     margin-bottom: 50px;
 }
 
+
 .section-title span {
+
     color: #60a5fa;
 
     font-weight: bold;
 }
 
+
 .section-title h2 {
+
     font-size: 40px;
 
     margin-top: 8px;
 }
 
+
 .center {
+
     text-align: center;
 }
 
 
-/* عن أسبوع الفضاء */
+/* ==================== ABOUT ==================== */
 
 .about-grid {
+
     display: grid;
 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:
+        2fr 1fr;
 
     gap: 50px;
 
     align-items: center;
 }
 
+
 .about-text p {
+
     color: #cbd5e1;
 
     line-height: 2;
@@ -360,119 +529,159 @@ header {
     margin-bottom: 20px;
 }
 
+
 .quote {
-    border-right: 4px solid #3b82f6;
+
+    border-right:
+        4px solid #3b82f6;
 
     padding: 20px;
 
-    background: rgba(59, 130, 246, 0.08);
+    background:
+        rgba(59, 130, 246, 0.08);
 
     color: #bfdbfe;
 }
 
+
 .info-card {
+
     padding: 35px;
 
     border-radius: 25px;
 
-    background: linear-gradient(
-        145deg,
-        #111827,
-        #0f172a
-    );
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #0f172a
+        );
 
-    border: 1px solid #1e3a8a;
+    border:
+        1px solid #1e3a8a;
 
     text-align: center;
 }
 
+
 .info-card .icon {
+
     font-size: 70px;
 }
 
+
 .info-card h3 {
+
     margin: 15px 0;
 }
 
 
-/* البطاقات */
+/* ==================== CARDS ==================== */
 
 .cards {
+
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 20px;
 }
 
+
 .card {
+
     padding: 30px;
 
-    border: 1px solid #1e293b;
+    border:
+        1px solid #1e293b;
 
     border-radius: 20px;
 
-    background: rgba(15, 23, 42, 0.8);
+    background:
+        rgba(15, 23, 42, 0.8);
 
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
 
-    border-color: #3b82f6;
+.card:hover {
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        #3b82f6;
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.25);
+        0 15px 35px
+        rgba(0, 0, 0, 0.25);
 }
 
+
 .card-icon {
+
     font-size: 45px;
 
     margin-bottom: 20px;
 }
 
+
 .card h3 {
+
     margin-bottom: 12px;
 }
 
+
 .card p {
+
     color: #94a3b8;
 
     line-height: 1.8;
 }
 
 
-/* استكشاف الفضاء */
+/* ==================== SPACE ==================== */
 
 .space-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 25px;
 }
 
+
 .space-card {
+
     padding: 30px;
 
     border-radius: 25px;
 
     background: #0f172a;
 
-    border: 1px solid #1e293b;
+    border:
+        1px solid #1e293b;
 
     transition: 0.3s;
 }
 
+
 .space-card:hover {
-    transform: translateY(-8px);
+
+    transform:
+        translateY(-8px);
 
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.4);
+        0 15px 40px
+        rgba(0, 0, 0, 0.4);
 }
 
+
 .space-image {
+
     font-size: 90px;
 
     text-align: center;
@@ -480,27 +689,34 @@ header {
     margin-bottom: 20px;
 }
 
+
 .space-card h3 {
+
     font-size: 25px;
 
     margin-bottom: 10px;
 }
 
+
 .space-card p {
+
     color: #94a3b8;
 
     line-height: 1.8;
 }
 
 
-/* الرسالة */
+/* ==================== MISSION ==================== */
 
 .mission {
-    padding: 120px 25px;
+
+    padding:
+        120px 25px;
 
     text-align: center;
 
     background:
+
         radial-gradient(
             circle at center,
             rgba(37, 99, 235, 0.25),
@@ -508,22 +724,31 @@ header {
         );
 }
 
+
 .mission span {
+
     color: #60a5fa;
 
     letter-spacing: 3px;
 }
 
-.mission h2 {
-    font-size: clamp(35px, 6vw, 65px);
 
-    margin: 20px 0 35px;
+.mission h2 {
+
+    font-size:
+        clamp(35px, 6vw, 65px);
+
+    margin:
+        20px 0 35px;
 }
 
+
 .mission button {
+
     border: none;
 
-    padding: 15px 30px;
+    padding:
+        15px 30px;
 
     border-radius: 12px;
 
@@ -540,78 +765,103 @@ header {
     transition: 0.3s;
 }
 
+
 .mission button:hover {
-    transform: scale(1.05);
+
+    transform:
+        scale(1.05);
 
     background: #3b82f6;
 }
 
 
-/* معلومات الطلاب */
+/* ==================== PROJECT INFO ==================== */
 
 .student-info {
-    padding: 90px 25px;
+
+    padding:
+        90px 25px;
 
     text-align: center;
 }
 
+
 .student-card {
+
     max-width: 750px;
 
     margin: auto;
 
     padding: 45px;
 
-    background: rgba(15, 23, 42, 0.9);
+    background:
+        rgba(15, 23, 42, 0.9);
 
-    border: 1px solid #1e3a8a;
+    border:
+        1px solid #1e3a8a;
 
     border-radius: 25px;
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.35);
+        0 20px 50px
+        rgba(0, 0, 0, 0.35);
 }
 
+
 .student-card > span {
+
     color: #60a5fa;
 
     font-size: 15px;
 }
 
+
 .student-card h2 {
-    margin: 15px 0 30px;
+
+    margin:
+        15px 0 30px;
 
     font-size: 32px;
 }
 
+
 .student-card p {
+
     color: #cbd5e1;
 
-    margin: 14px 0;
+    margin:
+        18px 0;
 
     line-height: 1.8;
 
     font-size: 17px;
 }
 
+
 .student-card strong {
+
     color: #ffffff;
 }
 
 
-/* أسفل الصفحة */
+/* ==================== FOOTER ==================== */
 
 footer {
-    padding: 50px 25px;
+
+    padding:
+        50px 25px;
 
     text-align: center;
 
-    border-top: 1px solid #1e293b;
+    border-top:
+        1px solid #1e293b;
 
     color: #94a3b8;
 }
 
+
 .footer-logo {
+
     color: white;
 
     font-size: 22px;
@@ -621,101 +871,161 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .copyright {
+
     margin-top: 15px;
 
     font-size: 13px;
 }
 
 
-/* الجوال */
+/* ==================== MOBILE ==================== */
 
 @media (max-width: 850px) {
 
     .nav-links {
+
         display: none;
     }
 
+
     .menu-btn {
+
         display: block;
     }
 
+
     .hero {
+
         flex-direction: column;
 
         text-align: center;
     }
 
+
     .hero-buttons {
+
         justify-content: center;
 
         flex-wrap: wrap;
     }
 
+
     .planet {
+
         width: 280px;
 
         height: 280px;
     }
 
+
     .earth {
+
         font-size: 120px;
     }
 
+
     .orbit-1 {
+
         width: 250px;
 
         height: 120px;
     }
 
+
     .orbit-2 {
+
         width: 220px;
 
         height: 90px;
     }
 
+
     .about-grid {
+
         grid-template-columns: 1fr;
     }
+
 
     .space-grid {
+
         grid-template-columns: 1fr;
     }
 
+
     .cards {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
     }
+
+
+    .project-logos {
+
+        top: 85px;
+
+        right: 15px;
+
+        gap: 8px;
+    }
+
+
+    .project-logos img {
+
+        width: 60px;
+
+        height: 60px;
+    }
+
 }
 
-
-/* الجوال الصغير */
 
 @media (max-width: 500px) {
 
     .cards {
+
         grid-template-columns: 1fr;
     }
 
+
     .hero h1 {
+
         font-size: 50px;
     }
 
+
     .hero p {
+
         font-size: 16px;
     }
 
+
     .section-title h2 {
+
         font-size: 30px;
     }
 
+
     .hero-buttons {
+
         flex-direction: column;
     }
 
+
     .primary-btn,
     .secondary-btn {
+
         display: block;
 
         width: 100%;
     }
+
+
+    .student-card {
+
+        padding:
+            30px 20px;
+    }
+
 }
